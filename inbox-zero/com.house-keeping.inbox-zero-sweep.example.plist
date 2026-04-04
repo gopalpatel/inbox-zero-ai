@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>com.house-keeping.inbox-zero-sweep</string>
+
+    <key>ProgramArguments</key>
+    <array>
+        <string>/usr/bin/env</string>
+        <string>npx</string>
+        <string>tsx</string>
+        <string>src/cli.ts</string>
+        <string>sweep</string>
+    </array>
+
+    <key>WorkingDirectory</key>
+    <string>__PROJECT_DIR__</string>
+
+    <key>EnvironmentVariables</key>
+    <dict>
+        <key>GOOGLE_SERVICE_ACCOUNT_KEY</key>
+        <string>__GOOGLE_SERVICE_ACCOUNT_KEY__</string>
+        <key>GMAIL_USER</key>
+        <string>__GMAIL_USER__</string>
+        <key>PATH</key>
+        <string>/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin</string>
+    </dict>
+
+    <key>StartInterval</key>
+    <integer>900</integer>
+
+    <key>RunAtLoad</key>
+    <true/>
+
+    <key>StandardOutPath</key>
+    <string>__STDOUT_LOG_PATH__</string>
+
+    <key>StandardErrorPath</key>
+    <string>__STDERR_LOG_PATH__</string>
+</dict>
+</plist>

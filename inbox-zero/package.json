@@ -1,0 +1,33 @@
+{
+  "name": "inbox-zero",
+  "version": "1.0.0",
+  "description": "Gmail inbox zero toolchain — metadata pull, sender audit, noise removal, LLM classification, daily digest",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "cli": "tsx src/cli.ts",
+    "lint": "biome check src/ tests/",
+    "lint:fix": "biome check --fix src/ tests/"
+  },
+  "keywords": [
+    "gmail",
+    "inbox-zero",
+    "automation"
+  ],
+  "license": "ISC",
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.79.0",
+    "commander": "^14.0.3",
+    "googleapis": "^171.4.0",
+    "zod": "^4.3.6"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^2.4.7",
+    "@types/node": "^25.5.0",
+    "tsx": "^4.21.0",
+    "typescript": "^5.9.3",
+    "vitest": "^4.1.0"
+  }
+}

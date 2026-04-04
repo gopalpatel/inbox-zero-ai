@@ -1,0 +1,9 @@
+node_modules/
+dist/
+.env*
+!.env.example
+.secrets/
+.test-tmp-*/
+data/
+data-auriens/
+DATA-HANDOVER.md

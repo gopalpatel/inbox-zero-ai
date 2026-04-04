@@ -1,0 +1,32 @@
+{
+  "name": "inbox-zero-o365",
+  "version": "1.0.0",
+  "private": true,
+  "description": "",
+  "scripts": {
+    "cli": "tsx src/cli.ts",
+    "test": "vitest run",
+    "lint": "biome check src/ tests/",
+    "typecheck": "tsc --noEmit -p tsconfig.check.json"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.80.0",
+    "@azure/identity": "^4.13.1",
+    "@microsoft/microsoft-graph-client": "^3.0.7",
+    "@microsoft/microsoft-graph-types": "^2.43.1",
+    "commander": "^14.0.3",
+    "googleapis": "^171.4.0",
+    "zod": "^4.3.6"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^2.4.8",
+    "@types/node": "^25.5.0",
+    "tsx": "^4.21.0",
+    "typescript": "^6.0.2",
+    "vitest": "^4.1.1"
+  }
+}

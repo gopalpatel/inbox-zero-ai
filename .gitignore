@@ -1,0 +1,33 @@
+# Data artifacts (can be large, contain personal email metadata)
+inbox-zero/data/
+inbox-zero/data-auriens/
+inbox-zero-o365/data/
+obsidian-pipeline/data/
+
+# Build output
+inbox-zero/dist/
+inbox-zero-o365/dist/
+
+# Personal handover docs (contain emails, Sheet IDs, client names)
+HANDOVER.md
+inbox-zero/DATA-HANDOVER.md
+inbox-zero-o365/DATA-HANDOVER.md
+
+# OS
+.DS_Store
+
+# Claude Code local settings
+.claude/
+
+# Worktrees
+.worktrees/
+
+# Node
+node_modules/
+
+# Environment and credentials (never commit)
+.env
+.secrets/
+*.json.key
+credentials.json
+token.json
