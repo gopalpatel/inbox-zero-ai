@@ -20,7 +20,7 @@
   "dependencies": {
     "@anthropic-ai/sdk": "^0.128.0",
     "commander": "^15.0.0",
-    "googleapis": "^181.0.0",
+    "googleapis": "^182.0.0",
     "zod": "^4.3.6"
   },
   "devDependencies": {
